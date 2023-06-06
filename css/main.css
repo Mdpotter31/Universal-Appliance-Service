@@ -150,3 +150,30 @@
     }
     
 }
+    /*-- Services Page--*/
+
+    .services-header {
+        text-align: center;
+        padding: 40px;
+    }
+
+.refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.refrigerators img, .ovens img, .washers img, .microwaves img, .dishwashers img, .maintenance img, .sell-parts img {
+    width: 100px;
+    height: 100px;
+    align-self:center;
+}
+
+.refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
+    text-align: center;
+}
+
+
