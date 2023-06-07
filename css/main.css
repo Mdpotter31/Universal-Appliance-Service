@@ -176,4 +176,25 @@
     text-align: center;
 }
 
+/*-- About Us Page --*/
+.about-us-header {
+    text-align: center;
+    padding: 50px;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap:70px;
+}
+
+.about-us p {
+    flex: 1;
+}
+
+.about-us img {
+    height: 425px;
+    width: 500px;
+}
 
