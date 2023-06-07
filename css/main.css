@@ -96,66 +96,104 @@
 /*----------------------------------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
     
-    /*-- Navigation Bar --*/
-    .navbar {
+/*-- Navigation Bar --*/
+.navbar {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
         height: 70px;
         align-items: center;
-    }
+}
 
-    .main-nav {
+.main-nav {
         display: flex;
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
-    }
+ }
 
-    .main-nav li {
+.main-nav li {
         margin: 0;
-    }
+}
 
-    .nav-links {
+.nav-links {
         margin-left: 40px;
-    }
+}
 
-    .logo {
+.logo {
         margin-top: 0;
-    }
+}
 
-    .navbar-toggle {
+.navbar-toggle {
         display: none;
-    }
+}
 
-    .logo:hover,
-    .nav-links:hover {
+.logo:hover,
+.nav-links:hover {
         color: #FFFFFF;
-    }
+}
 
     /*-- Jumbotron --*/
-    .logo-jumbotron {
+.logo-jumbotron {
         background-image: url("../img/jumbotron.jpg");
         height: 400px;
-    }
+}
 
-    .logo-img {
+.logo-img {
         width: 350px;
         height: 300px;
-    }
+}
 
-    .motto-text {
+.motto-text {
         font-size: 24px;
         text-shadow: 3px 3px 5px #070549;
-    }
-    
 }
-    /*-- Services Page--*/
 
-    .services-header {
-        text-align: center;
-        padding: 40px;
-    }
+/*-- Home Page Services Section --*/
+.first-set-services,
+.second-set-services,
+.third-set-services {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.first-set-services .refrigerator-image,
+.first-set-services .stove-image,
+.first-set-services .washer-image,
+.second-set-services .microwave-image,
+.second-set-services .dishwasher-image,
+.second-set-services .maintenance-image,
+.third-set-services .sell-parts-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 275px; /* Adjust the width to create equal spacing */
+}
+
+.first-set-services img,
+.second-set-services img,
+.third-set-services img {
+  width: 100px;
+  height: 100px;
+}
+
+.first-set-services p,
+.second-set-services p,
+.third-set-services p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+/*-- Services Page--*/
+
+.services-header {
+    text-align: center;
+    padding: 40px;
+}
 
 .refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
     display: flex;
@@ -170,6 +208,7 @@
     width: 100px;
     height: 100px;
     align-self:center;
+    padding-bottom: 10px;
 }
 
 .refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
@@ -180,7 +219,7 @@
 .about-us-header {
     text-align: center;
     padding: 50px;
-}
+    }
 
 .about-us {
     display: flex;
@@ -197,4 +236,3 @@
     height: 425px;
     width: 500px;
 }
-
