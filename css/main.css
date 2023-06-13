@@ -91,6 +91,28 @@
     color: #FFFFFF;
 }
 
+/*--About Us--*/
+
+.about-us-header {
+    text-align: center;
+    padding: 25px;
+    }
+
+.about-us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    gap:15px;
+}
+.about-us p {
+    text-align: center;
+}
+.about-us img {
+    height: 425px;
+    width: 500px;
+}
 /*----------------------------------------------------------------------------------------*/
 /*-- Desktop CSS --*/
 /*----------------------------------------------------------------------------------------*/
@@ -216,23 +238,12 @@
 }
 
 /*-- About Us Page --*/
-.about-us-header {
-    text-align: center;
-    padding: 50px;
-    }
-
 .about-us {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    gap:70px;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap:35px;
+    padding: 25px;
+    align-items: flex-start;
 }
 
-.about-us p {
-    flex: 1;
-}
-
-.about-us img {
-    height: 425px;
-    width: 500px;
-}
