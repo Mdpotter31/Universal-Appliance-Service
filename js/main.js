@@ -6,17 +6,42 @@ navBarToggle.addEventListener("click", function () {
 });
 
 
-// Calculate the minimum and maximum dates for scheduling
-var today = new Date();
-var minDate = new Date();
-minDate.setDate(today.getDate() + 2); // Next two days are not available for scheduling
-var maxDate = new Date();
-maxDate.setDate(today.getDate() + 21); // 3 weeks from today
 
-// Format the dates for setting the min and max attributes of the date input field
-var minDateString = minDate.toISOString().split('T')[0];
-var maxDateString = maxDate.toISOString().split('T')[0];
+// Exclude weekends from date selection
+function excludeWeekends(date) {
+  return (date.getDay() !== 0 && date.getDay() !== 6);
+}
 
-// Set the min and max attributes of the date input field
-document.getElementById("appointment-date").setAttribute("min", minDateString);
-document.getElementById("appointment-date").setAttribute("max", maxDateString);
+// Set minimum and maximum dates for date input
+var currentDate = new Date();
+var minDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 2);
+var maxDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 21);
+
+document.getElementById('date').min = minDate.toISOString().split('T')[0];
+document.getElementById('date').max = maxDate.toISOString().split('T')[0];
+
+// Apply event listeners and validation on form submission
+document.querySelector('form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  
+  // Check if all required fields are filled
+  var requiredFields = document.querySelectorAll('input[required], select[required], textarea[required]');
+  var isFormValid = true;
+  
+  for (var i = 0; i < requiredFields.length; i++) {
+    if (!requiredFields[i].value) {
+      isFormValid = false;
+      requiredFields[i].classList.add('error');
+    } else {
+      requiredFields[i].classList.remove('error');
+    }
+  }
+  
+  // Display notification message based on form submission
+  if (isFormValid) {
+    alert('Thank you for submitting. Our dispatcher will call you within the next three days to confirm your schedule.');
+    document.querySelector('form').reset();
+  } else {
+    alert('Please fill out all required fields.');
+  }
+});
