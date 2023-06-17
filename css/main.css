@@ -335,3 +335,34 @@ input[type="submit"]:hover {
 .form-column:last-child {
   margin-right: 0;
 }
+
+/*-- Testimonials --*/
+
+.quote-arrow-left,
+.quote-arrow-right {
+  font-size: 24px;
+  color: #070549;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.quote-arrow-left:hover,
+.quote-arrow-right:hover {
+  transform: scale(1.2);
+}
+
+.quote-arrow-left {
+  margin-right: 10px;
+}
+
+.quote-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+.quote-content {
+  margin: 0 20px; 
+}
