@@ -209,42 +209,43 @@
 }
 
 
+/*-- Get a quote today --*/
 
-/*-- Services Page--*/
-
-.services-header {
-    text-align: center;
-    padding: 40px;
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px; 
 }
 
-.refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-
+.quote-text {
+  text-align: center;
+  padding: 35px;
 }
 
-.refrigerators img, .ovens img, .washers img, .microwaves img, .dishwashers img, .maintenance img, .sell-parts img {
-    width: 100px;
-    height: 100px;
-    align-self:center;
-    padding-bottom: 10px;
+.quote-text p {
+  margin-bottom: 20px; 
 }
 
-.refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
-    text-align: center;
+.contact-us {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #070549;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
-/*-- About Us Page --*/
-.about-us {
-    flex-direction: row;
-    margin-left: 100px;
-    margin-right: 100px;
-    gap:35px;
-    padding: 25px;
-    align-items: flex-start;
+.contact-us:hover  {
+  background-color: #999;
+}
+
+.contact-us:active {
+  background-color: #555;
 }
 /*-- Forms --*/
 
@@ -365,4 +366,41 @@ input[type="submit"]:hover {
 }
 .quote-content {
   margin: 0 20px; 
+}
+
+/*-- Services Page--*/
+
+.services-header {
+  text-align: center;
+  padding: 40px;
+}
+
+.refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}
+
+.refrigerators img, .ovens img, .washers img, .microwaves img, .dishwashers img, .maintenance img, .sell-parts img {
+  width: 100px;
+  height: 100px;
+  align-self:center;
+  padding-bottom: 10px;
+}
+
+.refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
+  text-align: center;
+}
+
+/*-- About Us Page --*/
+.about-us {
+  flex-direction: row;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap:35px;
+  padding: 25px;
+  align-items: flex-start;
 }
