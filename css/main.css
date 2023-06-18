@@ -191,7 +191,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 275px; /* Adjust the width to create equal spacing */
+  width: 275px; 
 }
 
 .first-set-services img,
@@ -207,7 +207,21 @@
   text-align: center;
   margin-top: 10px;
 }
+/*-- About Us/Home Page --*/
 
+.about-us-container {
+  align-self: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+} 
+.about-us-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.about-us-container p {
+  text-align: center;
+}
 
 /*-- Get a quote today --*/
 
@@ -224,6 +238,9 @@
   padding: 35px;
 }
 
+.quote-text h1 {
+  margin-bottom: 10px;
+}
 .quote-text p {
   margin-bottom: 20px; 
 }
@@ -247,6 +264,8 @@
 .contact-us:active {
   background-color: #555;
 }
+
+
 /*-- Forms --*/
 
 .container {
