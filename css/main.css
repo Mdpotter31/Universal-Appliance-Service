@@ -207,21 +207,6 @@
   text-align: center;
   margin-top: 10px;
 }
-/*-- About Us/Home Page --*/
-
-.about-us-container {
-  align-self: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 20px;
-} 
-.about-us-container h1 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-.about-us-container p {
-  text-align: center;
-}
 
 /*-- Get a quote today --*/
 
@@ -231,6 +216,7 @@
   align-items: center;
   flex-direction: column;
   padding: 25px; 
+  background-color: lightgray;
 }
 
 .quote-text {
@@ -386,6 +372,60 @@ input[type="submit"]:hover {
 .quote-content {
   margin: 0 20px; 
 }
+
+/*-- About Us/Home Page --*/
+
+.about-us-container {
+  align-self: center;
+  padding: 20px;
+  background-color: lightgrey;
+} 
+.about-us-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.about-us-container p {
+  text-align: center;
+   margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/*-- Footer--*/
+
+.footer {
+  background-color:#070549;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-header {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-image {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #fff;
+}
+
 
 /*-- Services Page--*/
 
