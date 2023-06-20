@@ -95,3 +95,12 @@ rightArrow.addEventListener('click', () => navigateTestimonials('right'));
 
 // Initial testimonial display
 updateTestimonial();
+
+
+
+
+// Scroll to footer when the Contact Us button is clicked
+document.querySelector('.contact-us').addEventListener('click', function() {
+  const footer = document.querySelector('.footer');
+  footer.scrollIntoView({ behavior: 'smooth' });
+});

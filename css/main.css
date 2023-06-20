@@ -215,7 +215,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 25px; 
+  padding: 50px; 
   background-color: lightgray;
 }
 
@@ -258,7 +258,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   background-color: #070549;
 }
 
@@ -350,6 +350,7 @@ input[type="submit"]:hover {
   color: #070549;
   cursor: pointer;
   transition: transform 0.3s;
+  padding: 50px;
 }
 
 .quote-arrow-left:hover,
@@ -379,6 +380,7 @@ input[type="submit"]:hover {
   align-self: center;
   padding: 20px;
   background-color: lightgrey;
+  padding: 50px;
 } 
 .about-us-container h1 {
   text-align: center;
@@ -395,7 +397,7 @@ input[type="submit"]:hover {
 
 .footer {
   background-color:#070549;
-  padding: 20px 0;
+  padding: 50px;
   text-align: center;
 }
 
@@ -462,4 +464,8 @@ input[type="submit"]:hover {
   gap:35px;
   padding: 25px;
   align-items: flex-start;
+}
+
+.about-us p {
+  padding-right: 100px;
 }
