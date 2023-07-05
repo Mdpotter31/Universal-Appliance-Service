@@ -111,8 +111,48 @@
 }
 .about-us img {
     height: 425px;
-    width: 500px;
+    width: 100%;
+    padding-bottom: 25px;
 }
+
+
+/*--Footer--*/
+
+.footer {
+  background-color:#070549;
+  padding: 25px;
+  text-align: center;
+}
+
+.footer-header {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.footer-image {
+  width: 250px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #fff;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*-- Desktop CSS --*/
 /*----------------------------------------------------------------------------------------*/
