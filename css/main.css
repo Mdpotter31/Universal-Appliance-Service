@@ -91,6 +91,33 @@
     color: #FFFFFF;
 }
 
+/*--Services--*/
+
+.services-header {
+  text-align: center;
+  padding: 30px;
+}
+
+.refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+}
+
+.refrigerators img, .ovens img, .washers img, .microwaves img, .dishwashers img, .maintenance img, .sell-parts img {
+  width: 100px;
+  height: 100px;
+  align-self:center;
+  padding-bottom: 10px;
+}
+
+.refrigerators, .ovens, .washers, .microwaves, .dishwashers, .maintenance, .sell-parts {
+  text-align: center;
+}
+
 /*--About Us--*/
 
 .about-us-header {
