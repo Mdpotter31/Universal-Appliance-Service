@@ -351,40 +351,41 @@ input[type="submit"]:hover {
 
 
 /*--Footer/Mobile--*/
+@media screen and (max-width: 767px) {
+  .footer {
+    background-color:#070549;
+    padding: 25px;
+    text-align: center;
+  }
 
-.footer {
-  background-color:#070549;
-  padding: 25px;
-  text-align: center;
-}
+  .footer-header {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+  }
 
-.footer-header {
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: #fff;
-}
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  }
 
-}
+  .footer-image {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+  }
 
-.footer-image {
-  width: 250px;
-  height: auto;
-  margin-right: 20px;
-}
+  .contact-info {
+    text-align: center;
+  }
 
-.contact-info {
-  text-align: center;
-}
-
-.contact-info p {
-  margin: 5px 0;
-  color: #fff;
+  .contact-info p {
+    margin: 5px 0;
+    color: #fff;
+  }
 }
 
 /*----------------------------------------------------------------------------------------*/
