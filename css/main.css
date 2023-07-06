@@ -91,7 +91,227 @@
     color: #FFFFFF;
 }
 
-/*--Services--*/
+/*-- Home Page Services Section/Mobile --*/
+.first-set-services,
+.second-set-services,
+.third-set-services {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.first-set-services .refrigerator-image,
+.first-set-services .stove-image,
+.first-set-services .washer-image,
+.second-set-services .microwave-image,
+.second-set-services .dishwasher-image,
+.second-set-services .maintenance-image,
+.third-set-services .sell-parts-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.first-set-services img,
+.second-set-services img,
+.third-set-services img {
+  width: 150px;
+  height: 150px;
+}
+
+.first-set-services p,
+.second-set-services p,
+.third-set-services p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/*-- Get a quote today/Mobile --*/
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px; 
+  background-color: lightgray;
+}
+
+.quote-text {
+  text-align: center;
+  padding: 5px;
+}
+
+.quote-text h1 {
+  margin-bottom: 5px;
+}
+.quote-text p {
+  margin-bottom: 5px; 
+}
+
+.contact-us {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #070549;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-us:hover  {
+  background-color: #999;
+}
+
+.contact-us:active {
+  background-color: #555;
+}
+
+/*-- Forms/Mobile --*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #070549;
+}
+
+.inner-container {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.form-note {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.required {
+  color: red;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form-column:last-child {
+  margin-right: 0;
+}
+
+
+/*-- Testimonials/Mobile --*/
+.quote-arrow-left,
+.quote-arrow-right {
+  font-size: 24px;
+  color: #070549;
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 10px;
+}
+
+.quote-arrow-left:hover,
+.quote-arrow-right:hover {
+  transform: scale(1.2);
+}
+
+.quote-arrow-left {
+  margin-right: 5px;
+}
+
+.quote-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.quote-content {
+  margin: 0 20px; 
+}
+
+
+/*-- About Us/Home Page/Mobile --*/
+
+.about-us-container {
+  align-self: center;
+  padding: 20px;
+  background-color: lightgrey;
+  padding: 20px;
+} 
+.about-us-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.about-us-container p {
+  text-align: center;
+   margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/*--Services/Mobile--*/
 
 .services-header {
   text-align: center;
@@ -118,7 +338,7 @@
   text-align: center;
 }
 
-/*--About Us--*/
+/*--About Us/Mobile--*/
 
 .about-us-header {
     text-align: center;
@@ -143,7 +363,7 @@
 }
 
 
-/*--Footer--*/
+/*--Footer/Mobile--*/
 
 .footer {
   background-color:#070549;
