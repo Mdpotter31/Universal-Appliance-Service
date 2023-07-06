@@ -92,40 +92,27 @@
 }
 
 /*-- Home Page Services Section/Mobile --*/
-.first-set-services,
-.second-set-services,
-.third-set-services {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-}
+@media screen and (max-width: 767px) {
+  .first-set-services,
+  .second-set-services,
+  .third-set-services {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
 
-.first-set-services .refrigerator-image,
-.first-set-services .stove-image,
-.first-set-services .washer-image,
-.second-set-services .microwave-image,
-.second-set-services .dishwasher-image,
-.second-set-services .maintenance-image,
-.third-set-services .sell-parts-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-}
-
-.first-set-services img,
-.second-set-services img,
-.third-set-services img {
-  width: 150px;
-  height: 150px;
-}
-
-.first-set-services p,
-.second-set-services p,
-.third-set-services p {
-  text-align: center;
-  margin-top: 15px;
+  .first-set-services .refrigerator-image,
+  .first-set-services .stove-image,
+  .first-set-services .washer-image,
+  .second-set-services .microwave-image,
+  .second-set-services .dishwasher-image,
+  .second-set-services .maintenance-image,
+  .third-set-services .sell-parts-image {
+    margin-bottom: 20px;
+    width: auto;
+    padding: 10px;
+  }
 }
 
 /*-- Get a quote today/Mobile --*/
