@@ -164,7 +164,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
     background-color: #070549;
   }
 
@@ -172,6 +171,8 @@ body {
     background-color: #ffffff;
     padding: 35px;
     flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   h2 {
@@ -534,7 +535,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 75vh;
   background-color: #070549;
 }
 
