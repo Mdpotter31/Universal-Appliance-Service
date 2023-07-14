@@ -15,6 +15,13 @@ $maxDate->modify('+21 days');
 echo '<script>';
 echo 'document.getElementById("date").min = "' . $minDate->format('Y-m-d') . '";';
 echo 'document.getElementById("date").max = "' . $maxDate->format('Y-m-d') . '";';
+echo 'document.getElementById("date").addEventListener("input", function() {';
+echo 'var selectedDate = new Date(this.value);';
+echo 'if (!excludeWeekends(selectedDate)) {';
+echo 'this.value = "";';
+echo 'alert("Weekends are not allowed. Please select a valid date.");';
+echo '}';
+echo '});';
 echo '</script>';
 
 // Apply event listeners and validation on form submission
@@ -45,4 +52,3 @@ echo '});';
 echo '</script>';
 
 ?>
-
