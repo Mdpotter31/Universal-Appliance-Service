@@ -746,6 +746,12 @@ input[type="submit"]:hover {
 }
 
 .about-us p {
-  padding-right: 100px;
+  margin-left:350px ;
+  margin-right: 250px;
+  font-size: 18px;
 }
-
+.about-us img {
+  width: 550px;
+  height: auto;
+  margin-right: 200px;
+}
