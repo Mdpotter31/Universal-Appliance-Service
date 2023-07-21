@@ -708,6 +708,10 @@ input[type="submit"]:hover {
   margin-right: 10px;
 }
 
+.quote-name {
+  font-weight: bold;
+}
+
 .quote-section {
   display: flex;
   align-items: center;
