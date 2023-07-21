@@ -549,6 +549,11 @@ font-size: 20px;
   margin-top: 10px;
 }
 
+a {
+  text-decoration: none; 
+  color: black; 
+}
+
 /*-- Get a quote today --*/
 
 .quote-container {
