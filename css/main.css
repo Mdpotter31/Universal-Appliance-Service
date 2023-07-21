@@ -493,20 +493,21 @@ margin-bottom: 15px;
   text-align: center;
   padding: 15px;
 }
-.intro-info-text h1{
+.intro-info-text h1 {
 margin-bottom: 35px;
 }
 
-.intro-info-text p{
+.intro-info-text p {
   margin-bottom: 35px;
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
   }
 
-.intro-info-list li{
+.intro-info-list li {
 padding: 15px;
 margin-bottom: 15px;
+font-size: 20px;
 }
 
 
@@ -816,4 +817,13 @@ input[type="submit"]:hover {
   width: 550px;
   height: auto;
   margin-right: 200px;
+}
+
+/*-- Font Changes --*/
+* p {
+font-size: 20px;
+}
+
+* h1 {
+  font-size: 28px;
 }
