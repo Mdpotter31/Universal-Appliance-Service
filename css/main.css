@@ -532,13 +532,14 @@ font-size: 20px;
   align-items: center;
   justify-content: center;
   width: 275px; 
+  padding:25px;
 }
 
 .first-set-services img,
 .second-set-services img,
 .third-set-services img {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
 }
 
 .first-set-services p,
@@ -788,8 +789,8 @@ input[type="submit"]:hover {
 }
 
 .refrigerators img, .ovens img, .washers img, .microwaves img, .dishwashers img, .maintenance img, .sell-parts img {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   align-self:center;
   padding-bottom: 10px;
 }
