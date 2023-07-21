@@ -448,6 +448,38 @@ body {
         text-shadow: 3px 3px 5px #070549;
 }
 
+
+/*-- Intro/Info Section --*/
+.intro-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px; 
+  background-color: lightgray;
+}
+
+.intro-info-text {
+  text-align: center;
+  padding: 15px;
+}
+.intro-info-text h1{
+margin-bottom: 35px;
+}
+
+.intro-info-text p{
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+.intro-info-list li{
+padding: 15px;
+margin-bottom: 15px;
+}
+
+
 /*-- Home Page Services Section --*/
 .first-set-services,
 .second-set-services,
