@@ -91,6 +91,36 @@ body {
     text-shadow: 1px 1px 3px #070549;
     color: #FFFFFF;
 }
+/*-- Intro/Info Section/Mobile --*/
+
+.intro-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px; 
+  background-color: lightgray;
+}
+
+.intro-info-text {
+  text-align: center;
+  padding: 15px;
+}
+.intro-info-text h1{
+margin-bottom: 35px;
+}
+
+.intro-info-text p{
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+  }
+
+.intro-info-list li{
+padding: 15px;
+margin-bottom: 15px;
+}
+
+
 
 /*-- Home Page Services Section/Mobile --*/
 @media screen and (max-width: 767px) {
