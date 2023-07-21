@@ -67,28 +67,31 @@ let testimonialIndex = 0;
 
 const testimonials = [
   {
-    text: "This is an example testimonial from a customer. This is number one.",
-    name: "Person One"
+    text: "Universal Appliance came to the rescue and approached this job with some concern regarding the logistics of the repair , but all the readiness to do the job you could ask for. CJ even bought me a lunch…!!!",
+    name: "Patrick Holyfield"
   },
   {
-    text: "This is an example testimonial from a customer. This is number two.",
-    name: "Person Two"
+    text: "Repaired within 24 hours of call. Arrived on time . Tech diagnosed and repaired within an hour. Ryan was our tech and we definitely recommend and will call again.",
+    name: "Bonnie Hutcherson"
   },
   {
-    text: "This is an example testimonial from a customer. This is number three.",
-    name: "Person Three"
+    text: "I’ve been dealing with an issue for a month with Lowes Warranty. Universal Appliance has done everything in their power to repair my washer. The washer is tired and refuses to work. CJ, Shelby, & Jennifer are ALL excellent, they have worked with us every step of the way to get the washer repaired. Eric, technician is very knowledgeable, prompt, courteous, & professional.",
+    name: "Kimberly Kieth"
   },
   {
-    text: "This is an example testimonial from a customer. This is number four.",
-    name: "Person Four"
+    text: "Every person I spoke to was efficient, friendly, and quick - from Jen in the office, Marik in parts, and Justin for our service calls.",
+    name: "Brooke Burnette"
   }
 ];
 
 function updateTestimonial() {
-  quoteContent.querySelector('.quote-text').textContent = testimonials[testimonialIndex].text;
+  const testimonialText = testimonials[testimonialIndex].text;
+  const quotedText = `"${testimonialText}"`; // Add quotes around the testimonial text
+  quoteContent.querySelector('.quote-text').textContent = quotedText;
   quoteNumber.textContent = testimonialIndex + 1;
   quoteName.textContent = testimonials[testimonialIndex].name;
 }
+
 
 function navigateTestimonials(direction) {
   if (direction === 'left') {
