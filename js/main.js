@@ -18,7 +18,7 @@ document.getElementById('date').max = maxDate.toISOString().split('T')[0];
 
 // Apply event listeners and validation on form submission
 document.querySelector('form').addEventListener('submit', function (event) {
-  event.preventDefault();
+  
 
   // Check if all required fields are filled
   var requiredFields = document.querySelectorAll('input[required], select[required], textarea[required]');
@@ -46,7 +46,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
   // Display notification message based on form submission
   if (isFormValid) {
     alert('Thank you for submitting. Our dispatcher will call you within the next three days to confirm your schedule.');
-    document.querySelector('form').reset();
+    
   } else {
     alert('Please fill out all required fields and select a valid weekday date.');
   }
